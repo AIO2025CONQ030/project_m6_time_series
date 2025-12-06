@@ -57,9 +57,7 @@ with right:
     )
     df = st.session_state["df"]
     if st.session_state["redraw"]:
-        st.header("Accuracy")
         print("Redrawing charts...", st.session_state["seq_len"])
-        # line_chart()
 
         st.header("Train loss vs Validation loss")
         models = st.session_state["models"]
